@@ -1,4 +1,4 @@
-export function displayData(city,temp,region,country,lat,lon,tz,ct,imageUrl,currentText,temp_fl,hum,rain,windSpeed,gustSpeed,vis_km,windDir,windDeg){
+export function displayData(city,temp,region,country,lat,lon,tz,ct,imageUrl,currentText,temp_fl,hum,rain,windSpeed,gustSpeed,vis_km,windDir,windDeg,isDay){
 
     const cityName = document.getElementById('city-name');
     cityName.innerHTML = `${city}`;
@@ -50,4 +50,11 @@ export function displayData(city,temp,region,country,lat,lon,tz,ct,imageUrl,curr
 
     const windDirection = document.getElementById('wind-dir');
     windDirection.innerHTML = `Wind Direction : ${windDir} (${windDeg}°)<hr>`
+
+    const headerElement = document.querySelector('.header');
+    if (isDay){
+        headerElement.style.background = 'url("./images/day.avif")'
+    }else{
+        headerElement.style.background = 'url("./images/background.jpg")'
+    }
 }

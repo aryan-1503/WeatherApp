@@ -5,49 +5,57 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./images/weather-app.png">
-  <script src="./main.js"></script>
+    <script src="./main.js" defer></script>
 </head>
 <body>
-    <header class="header">
-        Weather App
-    </header>
-    <div id="content">
-        <div class="form">
-            <form action="#" method="post">
-                <input type="text" name="CityName" id="city" placeholder="Enter a city">
-                <button type="button" id="search">Search</button>
-            </form>
-        </div>
-        <div id="all-info">
-            <div class="location-info">
-                <div id="city-name">Vadodara</div>
-                <div class="loc-info">
-                    <div id="temp">Temperature : 27.5℃<hr></div>
-                    <div id="region">Region : Gujarat<hr></div>
-                    <div id="country">Country : India<hr></div>
-                    <div id="lat">Latitude : 22.3<br><hr></div>
-                    <div id="lon">Longitude : 73.2<br><hr></div>
-                    <div id="tz">Time Zone : Asia/Kolkata<br><hr></div>
-                    <div id="ct">Current Time : 18:36<br><hr></div>
-                </div>
+<header class="header">
+    Weather App
+</header>
+<div id="content">
+    <div class="form">
+        <form id="searchForm">
+            <input type="text" name="CityName" id="city" placeholder="Enter a city">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div id="all-info">
+        <div class="location-info">
+            <div id="city-name">Vadodara</div>
+            <div class="loc-info">
+                <div id="temp">Temperature : 27.5℃<hr></div>
+                <div id="region">Region : Gujarat<hr></div>
+                <div id="country">Country : India<hr></div>
+                <div id="lat">Latitude : 22.3<br><hr></div>
+                <div id="lon">Longitude : 73.2<br><hr></div>
+                <div id="tz">Time Zone : Asia/Kolkata<br><hr></div>
+                <div id="ct">Current Time : 18:36<br><hr></div>
             </div>
-            <div class="current-info">
-                <div class="img">
-                    <img id="image-url" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="">
-                    <div id="wthr-type">Sunny</div>
-                </div>
-                <div class="loc-info">
-                    <div id="temp_fl">Temperature(feels like) : 27℃<hr></div>
-                    <div id="humidity">Humidity : 35%<hr></div>
-                    <div id="rain">Rain : 0mm<hr></div>
-                    <div id="wind-speed">Wind Speed : 7.9km/h<hr></div>
-                    <div id="gust-speed">Gust Speed : 14.4km/h<hr></div>
-                    <div id="visibility">Visibility : 10km<hr></div>
-                    <div id="wind-dir">Wind Direction : NNW (333°)<hr></div>
-                </div>
+        </div>
+        <div class="current-info">
+            <div class="img">
+                <img id="image-url" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="">
+                <div id="wthr-type">Sunny</div>
+            </div>
+            <div class="loc-info">
+                <div id="temp_fl">Temperature(feels like) : 27℃<hr></div>
+                <div id="humidity">Humidity : 35%<hr></div>
+                <div id="rain">Rain : 0mm<hr></div>
+                <div id="wind-speed">Wind Speed : 7.9km/h<hr></div>
+                <div id="gust-speed">Gust Speed : 14.4km/h<hr></div>
+                <div id="visibility">Visibility : 10km<hr></div>
+                <div id="wind-dir">Wind Direction : NNW (333°)<hr></div>
             </div>
         </div>
     </div>
+</div>
 </body>
 </html>
+
+
+
+
+
+
+
+
 
